@@ -1,0 +1,35 @@
+/*! RezaInstagram.css */
+body{
+    background: #fff;
+}
+
+.am-navbar{
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    position: fixed;
+    width: 100vw;
+}
+.am-navbar-light path{
+    color: #363636;
+}
+.am-navbar-left{
+    flex: 1 1;
+}
+.am-navbar-title{
+    padding: 10px 0px;
+    flex: 3 3;
+}
+.am-navbar-right{
+    flex: 4 4;
+}
+.am-navbar-title a{
+    width: 100%;
+    height: 100%;
+}
+.am-navbar .instagramlogo{
+    width: 100%;
+    height: 100%;
+    background: url(./assets/LogoTxt.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
