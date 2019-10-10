@@ -13,6 +13,7 @@ import Photo from "./components/Photo";
 import { MyNavBar } from "./components/Navbar";
 import 'antd-mobile/dist/antd-mobile.css';
 import 'bulma/css/bulma.min.css';
+import './assets/fontawesome/css/all.css'
 import './RezaInstagram.css';
 
 const store = configureStore();

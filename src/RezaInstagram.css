@@ -1,6 +1,29 @@
 /*! RezaInstagram.css */
+body *{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color: #262626;
+}
 body{
     background: #fff;
+    line-height: 1;
+}
+
+a{
+    color: inherit;
+}
+
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+.tcol-999{
+    color: #999;
 }
 
 .am-navbar{
@@ -19,7 +42,7 @@ body{
     flex: 3 3;
 }
 .am-navbar-right{
-    flex: 4 4;
+    flex: 5 5;
 }
 .am-navbar-title a{
     width: 100%;
@@ -30,6 +53,143 @@ body{
     height: 100%;
     background: url(./assets/LogoTxt.png);
     background-size: contain;
-    background-position: center center;
+    background-position: center left;
     background-repeat: no-repeat;
+}
+
+.app-container{
+    padding: 50px 15px 0px 15px;
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+    background: white;
+    overflow: hidden;
+}
+
+/*! TIMELINE */
+
+article{
+    margin-bottom: 15px;
+}
+article>header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center
+}
+article>header img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+article>header .col-avatar{
+    flex: none;
+    font-size: 0px;
+}
+article>header .col-username{
+    flex: 1 1;
+    margin-left: 12px;
+}
+article>header .col-username h2{
+    color: #262626;
+    text-transform: lowercase;
+}
+article>header .col-ellipsis i{
+    font-size: 24px;
+}
+article>.photo-box{
+    margin: 0px -15px;
+}
+article>.photo-box img{
+    width: 100%;
+    height: auto;
+}
+article>footer *{
+    font-size: 14px;
+}
+article>footer>.row-icons{
+    margin: 0px -8px;
+}
+article>footer>.row-icons>i{
+    font-size: 20px;
+    margin: 8px;
+}
+article>footer>div{
+    margin-bottom: 8px;
+}
+article>footer>hr{
+    margin: 10px -15px;
+}
+.desc-row>p>span{
+    margin-right: 10px;
+}
+.comment-row , .date-row{
+    color: #999
+}
+
+
+/*! USER */
+
+.page-user>header{
+    display: flex;
+    padding:30px 0px 24px 0px;
+    align-items: center;
+}
+.page-user>header>.col-avatar{
+    flex:none;
+    width: 77px;
+    height: 77px;
+}
+.page-user>header>.col-avatar>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.page-user>header>.col-counters{
+    display: flex;
+    flex: 1 1;
+    margin-left: 15px;
+    margin-top: -5px;
+
+}
+.page-user>header>.col-counters>div{
+    text-align: center;
+}
+.page-user>header>.col-counters>div>h2{
+    font-weight: 800;
+}
+.page-user>.desc-row *{
+    font-size: 14px;
+    line-height: 20px;
+}
+.page-user>.icons-row{
+    margin: 15px -15px 0px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    padding: 10px 0px;
+}
+.page-user>.icons-row>i{
+    text-align: center;
+    width: 33.33%;
+    font-size: 32px;
+    color: #cecece;
+}
+.page-user>.photos-row{
+    margin: -2px -17px 0px;
+    display: flex;
+    flex-flow: wrap;
+}
+.page-user>.photos-row>div{
+    background: rgb(146, 224, 146);
+    margin:2px 2px;
+    width: calc( 33.6vw - 4px );
+    height: calc( 33.6vw - 4px );
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+.page-user>.photos-row>div>img{
+    width: 100%;
+    height: auto;
+
 }
